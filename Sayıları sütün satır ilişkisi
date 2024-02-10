@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdio.h>
+#include <ctime>
+#pragma warning (disable : 4996)
+using namespace std;
+int main(){
+	int satır;
+	int sütün;
+	for ( int satır = 1; satır <= 9; satır++) {
+		for (int sutun = 1; sutun <= satır; sutun++) {
+			cout << satır;
+		}
+		printf("\n");
+}
+	printf("I");
+	return 0;
+}
