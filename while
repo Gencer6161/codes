@@ -1,0 +1,11 @@
+#pragma warning (disable : 4996)
+using namespace std;
+int main() {
+	int sayaç = 0;
+	while (sayaç <= 100) {
+		cout << sayaç;
+		sayaç = sayaç + 2;
+		printf("\n");
+	}
+	return 0;
+}
