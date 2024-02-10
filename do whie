@@ -1,0 +1,17 @@
+#include <stdio.h>
+#pragma warning (disable : 4996)
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+
+int main() {
+    int sayı = 0;
+       do {
+           sayı = sayı + 1;
+           cout << sayı;
+           printf("\n");
+       } while (sayı <= 99);
+          
+    return 0;
+}
