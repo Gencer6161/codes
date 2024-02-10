@@ -1,0 +1,14 @@
+#include <iostream>
+#include <stdio.h>
+#include <ctime>
+#pragma warning (disable : 4996)
+using namespace std;
+int main() {
+	int sayaç = 500;
+	while (sayaç >= 100) {
+		cout << sayaç;
+		sayaç = sayaç -1;
+		printf("\n");
+	}
+	return 0;
+}
