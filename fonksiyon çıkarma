@@ -1,0 +1,31 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+
+int çıkarma() {
+	int sayı;
+	int sayı2;
+	int çıkarım;
+
+	cout << "Bir sayı giriniz";
+		cin >> sayı;
+		cout << "Bir sayı giriniz";
+			cin >> sayı2;
+
+			çıkarım = sayı - sayı2;
+			return çıkarım ;
+}
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	int sayyım ;
+	sayyım = çıkarma();
+	cout << sayyım;
+
+
+	return 0;
+}
