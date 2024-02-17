@@ -1,0 +1,22 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+
+
+int main() {
+	int alfabe;
+	alfabe = 96;
+	while (alfabe < 122) {
+		alfabe++;
+		printf("%c", alfabe);
+		printf("\n");
+	}
+	alfabe++;
+	cout << alfabe;
+	return 0;
+}
