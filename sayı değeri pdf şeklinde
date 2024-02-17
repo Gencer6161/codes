@@ -1,0 +1,20 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	int sayı;
+	cout<<"sayı giriniz";
+	cin >> sayı;
+	int* pdf = &sayı;
+	cout << "sayınız budur:" << sayı;
+	cout << "sayınızın değeri" << pdf;
+	return 0;
+}
