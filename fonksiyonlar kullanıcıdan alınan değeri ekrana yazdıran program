@@ -1,0 +1,20 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+int fonk() {
+	cout << "Deger giriniz";
+	int değer;
+	cin >> değer;
+	return değer;
+}
+
+
+int main() {
+	int a = fonk();
+	cout << a;
+	return 0;
+}
