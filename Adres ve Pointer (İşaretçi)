@@ -1,0 +1,47 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+    int sayi1, sayi2, sayi3;
+
+    printf("Lütfen birinci sayıyı girin: ");
+    scanf("%d", &sayi1);
+
+    printf("Lütfen ikinci sayıyı girin: ");
+    scanf("%d", &sayi2);
+
+    printf("Lütfen üçüncü sayıyı girin: ");
+    scanf("%d", &sayi3);
+    int* pdf = &sayi1;
+    cout << "1. sayınız budur:" << sayi1;
+    cout << "\n";
+    cout << "1. sayınızın değeri" << pdf;
+    cout << "\n";
+   
+    cout << "\n";
+    int* pdf1 = &sayi2;
+    cout << "\n";
+    cout << "2.sayınız budur:" << sayi2;
+    cout << "\n";
+    cout << "2.sayınızın değeri" << pdf;
+    cout << "\n";
+
+    cout << "\n";
+    int* pdf2 = &sayi3;
+    cout << "\n";
+    cout << "3.sayınız budur:" << sayi3;
+    cout << "\n";
+    cout << "3.sayınızın değeri" << pdf;
+    cout << "\n";
+
+
+	return 0;
+}
