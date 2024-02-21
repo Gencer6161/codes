@@ -1,0 +1,121 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+int toplama() {
+	float sayı;
+	float sayı1;
+	cout << "1. Sayıyı giriniz:";
+	cin >> sayı;
+	cout << "2. Sayıyı giriniz:";
+	cin >>sayı1;
+	float toplama;
+	cout << "Toplanıyor\n";
+	cout << "1\n";
+	_sleep(500);
+	cout << "2\n";
+	_sleep(500);
+	cout << "3\n";
+	_sleep(500);
+	cout << "tamamlandı\n";
+	toplama = sayı + sayı1;
+	cout << "sonucunuz budur =>:";
+	cout << toplama;
+	return 0;
+}
+
+
+int çıkarma() {
+	float sayı;
+	float sayı1;
+	cout << "1. Sayıyı giriniz:";
+	cin >> sayı;
+	cout << "2. Sayıyı giriniz:";
+	cin >> sayı1;
+	float toplama;
+	cout << "çıkartılıyor\n";
+	cout << "1\n";
+	_sleep(500);
+	cout << "2\n";
+	_sleep(500);
+	cout << "3\n";
+	_sleep(500); 
+	cout << "tamamlandı\n";
+	toplama = sayı - sayı1;
+	cout << "sonucunuz budur =>:";
+	cout << toplama;
+	return 0;
+}
+int çarpma() {
+	float sayı;
+	float sayı1;
+	cout << "1. Sayıyı giriniz:";
+	cin >> sayı;
+	cout << "2. Sayıyı giriniz:";
+	cin >> sayı1;
+	float toplama;
+	cout << "çarpılıyor\n";
+	cout << "1\n";
+	_sleep(500);
+	cout << "2\n";
+	_sleep(500);
+	cout << "3\n";
+	_sleep(500);
+	cout << "tamamlandı\n";
+	toplama = sayı * sayı1;
+	cout << "sonucunuz budur =>:";
+	cout << toplama;
+	return 0;
+}
+int bölme() {
+	float sayı;
+	float sayı1;
+	cout << "1. Sayıyı giriniz:";
+	cin >> sayı;
+	cout << "2. Sayıyı giriniz:";
+	cin >> sayı1;
+	float toplama;
+	cout << "bölünüyor\n";
+	cout << "1\n";
+	_sleep(500);
+	cout << "2\n";
+	_sleep(500);
+	cout << "3\n";
+	_sleep(500);
+	cout << "tamamlandı\n";
+	toplama = sayı / sayı1;
+	cout << "sonucunuz budur =>:";
+	cout << toplama;
+	return 0;
+}
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	string abc;
+	cout << "Yapmak istediğiniz işlemi giriniz\n 1-Toplama\n2-çıkarma\n3-çarpma\n4-bölme\n";
+	int seçim;
+	cin >> seçim;
+	if (seçim == 1) {
+		float abc = toplama();
+	}
+	if (seçim == 2) {
+
+		float abc = çıkarma();
+	}if (seçim == 3) {
+		float abc = çarpma();
+	}if (seçim == 4) {
+		float abc = bölme();
+	}if (seçim < 1) {
+		cout << "Yanlış şeçim yaptınız tekrar deneyiniz";
+		return 0;
+	}if (seçim > 4) {
+		cout << "Yanlış şeçim yaptınız tekrar deneyiniz";
+		return 0;
+	}
+	cout << "Git hesaplamalarını kendin yap bence matematiğin gelişir saygılar sevgiler güzel kardeşim hayırlı cumalar.";
+		return 0; 
+}
