@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stdio.h>
+#include <ctime>
+#pragma warning (disable : 4996)
+using namespace std;
+int faktoritel(int sayı) {
+	int faktoriyel = 1;
+
+
+	for (int x = 1; x <= sayı; x++) {
+		faktoriyel *= x;
+	}
+	return faktoriyel;
+
+}
+
+
+int main() {
+	for (int i = 1; i < 9; i++) {
+		cout << faktoritel(i) << endl;
+
+	}
+	return 0;
+}
