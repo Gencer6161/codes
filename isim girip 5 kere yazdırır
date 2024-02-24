@@ -1,0 +1,23 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+void ekranaYaz() {
+	string isim;
+	cout << "isim gir";
+	cout << "\n";
+	cin >> isim;
+	cout << "girdiğiniz isim" << "\n" << isim << "\n";
+	cout << "\n";
+}
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	for (int i = 0; i < 5; i++) {
+		ekranaYaz();
+	}
+	return 0;
+}
