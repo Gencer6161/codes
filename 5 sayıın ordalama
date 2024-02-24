@@ -1,0 +1,34 @@
+nclude  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+void fonk() {
+	int a, b, c, d, e;
+	cout << "değer giriniz:";
+	cin >> a;
+	cout << "değer giriniz:";
+	cin >> b;
+	cout << "değer giriniz:";
+	cin >> c;
+	cout << "değer giriniz:";
+	cin >> d;
+	cout << "değer giriniz:";
+	cin >> e;
+	int ort;
+	int top;
+	top = a + b + c + d + e;
+
+	ort = top/5 ;
+
+	cout << ort;
+}
+
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	fonk();
+	return 0;
+}
