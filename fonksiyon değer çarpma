@@ -1,0 +1,23 @@
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+int mrb(){
+	cout << "değer giriniz";
+	int a;
+	cin >> a;
+	cout << "değer girniz";
+	int b;
+	cin >> b;
+	int ça;
+	ça = a * b;
+	cout << ça;
+	return 0;
+}
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	mrb();
+	return 0;
+}
