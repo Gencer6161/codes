@@ -1,0 +1,18 @@
+stream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+void mrb(){
+	cout << "Merhaba dünya";
+	return;
+}
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	mrb();
+	return 0;
+}
