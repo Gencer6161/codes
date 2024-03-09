@@ -1,0 +1,82 @@
+#include  <iostream>
+#include  <stdio.h>
+#include  <ctime>
+#include  <locale.h>
+#pragma warning (disable : 4996)
+using namespace std;
+
+
+
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	int şeçim;
+	int bakiye = 500;
+	cout << "Yapmak istediğiniz işlemi şeçiniz:\n1-)Para yatır\n2-)Para çek\n3-)Bakiye görüntüle\n4-)Çıkış\n";
+	cin >> şeçim;
+	if (şeçim < 1) {
+		cout << "------yanlış tuşlama------\n";
+		return main();
+	}if (şeçim > 4) {
+		cout << "------yanlış tuşlama------\n";
+		return main();
+	}
+	switch (şeçim) {
+	case 1:
+		float miktar;
+		cout << "Para yatırmak için tutar giriniz:";
+		cin >> miktar;
+		if (miktar < 1) {
+			cout << "Yatırmak istediğiniz para negatif olamaz:\n";
+			return main();
+		}
+		cout << "Paranız yatırılıyor.\n";
+		cout << "1\n";
+		_sleep(500);
+		cout << "2\n";
+		_sleep(500);
+		cout << "3\n";
+		_sleep(500);
+
+		 bakiye = bakiye + miktar;
+		cout << "Yeni bakiyeniz şudur=>" << bakiye<<"\n";
+		return main();
+	
+	case 2:
+		float miktar2;
+		cout << "Çekmek istediğiniz parayı giriniz:";
+		cin >> miktar2;
+		if (miktar2 < 0) {
+			cout << "geçersiz birim:" << "\n";
+			return main();
+		}
+		if (miktar2 > bakiye) {
+			cout << "Yetersiz bakiye:"<<"\n";
+			return main();
+		}
+		cout << "Paranız çekiliyor lütfen para alma yerinden önce kartınızı sonra paranızı alınız.\n";
+		cout << "1\n";
+		_sleep(500);
+		cout << "2\n";
+		_sleep(500);
+		cout << "3\n";
+		_sleep(500);
+
+		bakiye = bakiye - miktar2;
+		cout << "Yeni bakiyeniz=>" << bakiye << "\n";
+		return main();
+	case 3:
+		cout << "Bakiyeniz şudur=>" << bakiye <<"\n";
+		return main();
+	case 4:
+		cout << "Çıkış yapılıyor\n";
+			cout << "1\n";
+		_sleep(500);
+		cout << "2\n";
+		_sleep(500);
+		cout << "3\n";
+		_sleep(500);
+		break;
+	}
+	return 0;
+}
